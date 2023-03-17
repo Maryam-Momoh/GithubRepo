@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Merriweather:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    /* background-color:#577370 ; */
+    
+}
+
+body{
+    background-color: #222831;
+}
+
+.intro{
+    text-align: center;
+    line-height: 50px;
+    
+}
+
+.intro h1{
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: azure;
+}
+
+.span{
+    font-family: 'Acme', sans-serif;
+    font-size: 2rem;
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration-color: transparent;
+    -moz-text-decoration-color: transparent;
+
+}
+
+.color-change-3x {
+ 
+	-webkit-animation: color-change-3x 4s linear infinite alternate both;
+	animation: color-change-3x 4s linear infinite alternate both;
+}
+ 
+@-webkit-keyframes color-change-3x {
+    0% {
+      background: #2C5364;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+       text-decoration-color: transparent;
+       -moz-text-decoration-color: transparent;
+    }
+
+    50% {
+      background: #203A43;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+       text-decoration-color: transparent;
+      -moz-text-decoration-color: transparent;
+    }
+
+    100% {
+      background: #0F2027;
+      -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration-color: transparent;
+        -moz-text-decoration-color: transparent;
+    }
+}
+
+@keyframes color-change-3x {
+    0% {
+        background: #2C5364;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration-color: transparent;
+        -moz-text-decoration-color: transparent;
+      }
+
+      50% {
+        background: #203A43;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration-color: transparent;
+        -moz-text-decoration-color: transparent;
+      }
+
+      100% {
+        background: #0F2027;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration-color: transparent;
+        -moz-text-decoration-color: transparent;
+      }
+}
+  
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 13px 13px 20px #0d120e,
+    -13px -13px 20px #1a212f;
+}
+
+.home-img{
+    width: 400px;
+    border-radius: 12px;
+    
+    /* #9cc5c6 */
+}
+
+.btn{
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #222831;
+    box-shadow: 13px 13px 20px #0d120e,
+    -13px -13px 20px #1a212f;
+    color: azure;
+    text-align: center;
+    /* width:; */
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.btn::hover{
+    box-shadow: 13px 13px 20px #374150,
+    -13px -13px 20px #374150;
+}
+
+@media  screen and (max-width:600px) {
+    .img-container{
+        width: 300px;
+    }
+
+    .home-img{
+        width: 200px;
+    }
+}
