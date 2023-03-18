@@ -3,7 +3,7 @@
     import { ref, computed } from "vue";
     import { RouterLink, RouterView} from "vue-router";
     import { data } from "../composables/Data.js"
-    import projectInfo from "./projectInfo.vue";
+    
      
     let { repositories, totalRepos} = data()
 
