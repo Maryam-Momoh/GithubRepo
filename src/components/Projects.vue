@@ -4,16 +4,6 @@
     import { RouterLink, RouterView} from "vue-router";
     import { data } from "../composables/Data.js"
     import projectInfo from "./projectInfo.vue";
-  
-    // const repositories = ref([]);
-
-    //   fetch('https://api.github.com/users/Maryam-Momoh/repos')
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     repositories.value = data;
-    //     console.log(repositories)
-    //   })
-    //   .catch(error => console.error(error));
      
     let { repositories, totalRepos} = data()
 
@@ -40,18 +30,6 @@
             return repositories.value.slice(start, end);
             
       });
-      
-      // const goToPrevPage = () => {
-      //   if (currentPage.value > 1) {
-      //    return currentPage.value--;
-      //   }
-      // };
-
-      // const goToNextPage = computed(() => {
-      //   if (currentPage.value < totalPages) {
-      //    return currentPage.value++;
-      //   }
-      // });
 
 </script>
 
@@ -63,8 +41,8 @@
       <div  v-for="item in displayedItems" :key="item.id" class="card" >
           <div class="main-content" >
             <h1> {{ item.name }}</h1>
-            <RouterLink :to="{name: 'projectinfo', params:{ id: item.id }}" ><button class="read-btn">Read more</button></RouterLink>
-           
+            <RouterLink :to="{name: 'projectinfo', params:{ id: item.id }}" > <button class="read-btn">Read more</button></RouterLink>
+            
           </div>
         </div>
       </div> 
@@ -113,8 +91,6 @@
   border-radius: 12px;
   text-align: center;
   text-decoration: none;
-  /* list-style: none;
-  border: none; */
 }
 
 .main-content{
@@ -124,7 +100,6 @@
 
 .main-content h1{
   font-size: clamp(1.7rem, 5vh, 2.5rem);
-  /* margin-bottom: 10px; */
   color: #0d120e;
   
 }
@@ -199,8 +174,9 @@
 
 @media  screen and (width:768px){
   .card-container {
+    display: grid;
     gap: 2rem;
-    grid-template-columns:1fr 1fr ;
+    grid-template-columns:repeat(2,1fr) ;
   }
 
   .card-container .card {

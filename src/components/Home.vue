@@ -9,7 +9,7 @@
     <section class="body">
        
         <section class="header">
-        <section class="intro">
+            <section class="intro">
         <h1>HI THERE!</h1>
         <p>I'M <span class=" span color-change-3x">MARYAM MOMOH</span> </p>
     </section>
@@ -19,10 +19,5 @@
     </section>
     <RouterLink :to="{name: 'projects'}"><button class="btn">Explore Projects</button></RouterLink>
     </section>
-
-    </section>
-    
-   
+    </section> 
 </template>
-
-<style scoped></style>
