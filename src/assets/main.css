@@ -20,9 +20,13 @@ body{
     color: azure;
 }
 
+.intro p{
+    font-size: clamp(1.7rem, 5vh, 2.5rem);
+    color: azure;
+}
+
 .span{
     font-family: 'Acme', sans-serif;
-    font-size: clamp(1.7rem, 5vh, 2.5rem);
     background: #bdc3c7; 
     background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); 
     background: linear-gradient(to right, #2c3e50, #bdc3c7); 
